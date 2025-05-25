@@ -1,0 +1,733 @@
+body{
+    background-color:rgb(0,0,0);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    overflow-y:"hidden";
+}
+*{
+  font-family: "Montserrat", sans-serif;
+}
+.sideBarDiv{
+    height:640px;
+    width:306px;
+    background-color:rgb(0,0,0);
+    display: inline-block;
+}
+.menu-bar{
+    width:100%;
+    height:156px;
+    border-radius: 8px;
+    background-color:rgba(29, 27, 27, 0.668);
+}
+.content-of-menu-bar{
+    height:52px;
+    font-size:16px;
+    font-weight: 500;
+    box-sizing: border-box;
+    padding:10px 0 0 0;
+}
+.icons{
+    font-size:20px;
+    margin:0 22px 0 25px;
+}
+.menu-content1,.menu-content2{
+    color:white;
+}
+.menu-content3{
+    color:#ddddddd2;
+}
+.menu-content3:hover{
+    color:white;
+}
+.sideBarFooter{
+    height:476px;
+    width:100%;
+    border-radius: 8px;
+    margin-top:8px;
+    background-color:rgba(29, 27, 27, 0.668);
+}
+.innerSideBarFooter1{
+    height:239px;
+}
+.your-library{
+    height:25%;
+    width:100%;
+    display:flex;
+    box-sizing: border-box;
+    padding:0 30px 10px 23px;
+    align-items: center;
+}
+.library-heading{
+    font-size:16px;
+    color:#ddd;
+    margin:0;
+    flex-grow:1;
+    margin-left:17px;
+    font-size: 16px;
+    font-weight: 600;
+}
+.library-icon{
+    height:20px;
+    width:20px;
+    color:#ddd;
+    background-image:url(spotify/library_icon.png);
+    background-size:cover;
+}
+.plus-symbol{
+    height:32px;
+    width:32px;
+    font-size:16px;
+    color:#ddd;
+    border-radius:50%;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    transition:all 0.2 ease ;
+}
+.plus-symbol:hover{
+    background-color: rgba(60,60,60,0.4);
+    cursor: pointer;
+    color:white
+}
+.library-heading:hover{
+    color:white;
+    cursor:pointer;
+}
+.Your-library-content{
+    height:75%;
+    overflow:auto;
+    overflow-x: hidden;
+}
+.Your-library-content::-webkit-scrollbar{
+    width:12px;
+    background-color:transparent;
+}
+.Your-library-content::-webkit-scrollbar-thumb{
+    background-color: #ddd9;
+    visibility: hidden;
+}
+.Your-library-content::-webkit-scrollbar-thumb:active{
+    background-color:#ddde;
+}
+.Your-library-content:hover::-webkit-scrollbar-thumb{
+    visibility: visible;
+}
+.main-div-of-library-content{
+    height:365px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.create-playlist{
+    width:95%;
+    height:134px;
+    background-color:rgba(66, 60, 60,0.6);
+    border-radius:9px;
+    box-sizing:border-box;
+    padding-left:20px;
+}
+.maintext-of-createplaylist{
+    color:white;
+    font-size: 16px;
+    font-weight: 650;
+    margin-bottom: 5px;
+}
+.subtext-of-createplaylist{
+    margin-top:9px;
+    color:white;
+    font-size:14px;
+    font-weight: 550;
+}
+.library-content-button{
+    margin-top:27px;
+    height:32px;
+    width:127px;
+    background-color: white;
+    color:black;
+    font-size: 14px;
+    border-radius:16px;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    font-weight: 650;
+}
+.library-content-button:hover{
+    scale:1.03;
+    cursor:pointer;
+}
+.podcasts-to-follow{
+    width:95%;
+    height:175px;
+    border-radius: 9px;
+    margin-top:25px;
+    background-color:rgba(60,60,60,0.6);
+    box-sizing:border-box;
+    padding-left:20px;
+}
+.podcast-button{
+    width:143px;
+}
+.innerSideBarFooter2{
+    font-size: 11px;
+    color:rgba(221, 221,221,0.9);
+    height:237px;
+    box-sizing: border-box;
+    padding-left:25px;
+    line-height: 20px;
+}
+.innerSideBarFooter2Content{
+    margin-right:25px;
+}
+.language{
+    height:30px;
+    width:95px;
+    font-size:14px;
+    border:1px solid rgba(221,221,221,0.4);
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    border-radius:15px;
+    font-weight: 700;
+    margin-top:45px;
+    transition:all 0.1s ease-in ;
+}
+.language:hover{
+    border:1px solid white;
+    scale:1.05;
+    font-weight: 490;
+    cursor:pointer;
+}
+.mainMusicDiv{
+    height:640px;
+    width:1192px;
+    background-color:rgba(29, 27, 27, 0.668);
+    overflow:auto;
+    display: inline-block;
+    border-radius: 8px;
+}
+.mainMusicDiv::-webkit-scrollbar{
+    width:12px;
+    background-color:rgba(29, 27, 27, 0.668);
+    border-radius: 8px;
+}
+.mainMusicDiv::-webkit-scrollbar-thumb {
+    background-color:#ddd9;
+    visibility: hidden;
+}
+.mainMusicDiv:hover::-webkit-scrollbar-thumb{
+    visibility: visible;
+}
+.mainMusicDiv::-webkit-scrollbar-thumb:active{
+    background-color:#ddde;
+}
+.mainMusicDivContent{
+    height:2757px;
+    width:100%;
+}
+/* Contents of mainMusicDivContent */
+.headerContentDiv{
+    height:64px;
+    width:100%;
+    position:sticky;
+    top:0 ;
+    z-index: 2;
+    background-color:rgb(16, 15, 15);
+}
+.headerContent{
+    height:inherit;
+    width:inherit;
+    border-radius:8px;
+    display: flex;
+    align-items: center;
+    box-sizing:border-box;
+    padding:0 20px 0 15px;
+}
+.arrow{
+    height:32px;
+    width:32px;
+    border-radius:50%;
+    font-size: 21px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color:rgba(221, 221,221,0.5);
+    background-color:rgba(3, 3, 3, 0.4);
+    margin-right:8px;
+}
+.signinButton{
+    width:96px;
+    height:48px;
+    color:rgba(221, 221,221,0.5);
+    font-size: 15px;
+    font-weight: 650;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition:all 0.08s ease-in ;
+}
+.signinButton:hover{
+    color:white;
+    scale:1.05;
+    font-weight: 700;
+    cursor: pointer;
+}
+.loginButton{
+    width:109px;
+    height:48px;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    background-color: white;
+    color:black;
+    font-size: 15px;
+    font-weight: 650;
+    border-radius: 25px;
+}
+.loginButton:hover{
+    scale:1.03;
+    cursor:pointer;
+    font-weight: 720;
+}
+.extra-space-occupier{
+    flex-grow:1;
+}
+.musicAndFooterContentDiv{
+    height:2693px;
+    width:100%;    
+    background-color:rgba(29, 27, 27, 0.668);
+}
+/* Contents of mainMusicDivContent */
+
+/* Contents of musicAndFooterContent */
+.musicContentDiv{
+    height:2266px;
+    width:100%; 
+    display:flex;   
+    flex-direction: column;
+    justify-content: space-between;
+}
+/* Contents of musicAndFooterContent */
+.seven-divs-of-musicContent{
+    height:301px;
+    width:100%;
+}
+.heading-of-seven-divs{
+    height: 34px;
+    width:100%;
+    display:flex;
+    align-items:end;
+    box-sizing: border-box;
+    padding:0 19px 0 19px;
+    justify-content: space-between;
+}
+.main-text-of-heading-of-seven-divs{
+    color:white;
+    font-size:22px;
+    font-weight:700;
+}
+.show-all-option{
+    color:#ddd;
+    font-size:14px;
+    font-weight:500;
+}
+.main-text-of-heading-of-seven-divs:hover{
+    text-decoration:2px solid white underline;
+    cursor:pointer;
+}
+.show-all-option:hover{
+    text-decoration:1px solid white underline;
+    cursor:pointer;
+}
+.contentDiv-of-seven-divs{
+    height:267px;
+    width:100%;
+    display:flex;
+    justify-content: center;
+}
+.content-of-seven-divs{
+    height:inherit;
+    width:198px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.photo-and-text-content-of-musicDiv{
+    height:240px;
+    width:172px;
+}
+.content-of-seven-divs:hover{
+    background-color:rgba(255,255,255,0.04);
+    border-radius:4px;
+}
+.photo-of-music-div{
+    width:inherit;
+    height:73%;
+    background-color: red;
+    border-radius: 7px;
+    display:flex;
+    justify-content:end;
+    align-items:end;
+    background-size:cover;
+}
+.one1{
+    background-image:url(spotify/one_1.jpeg);
+}
+.one2{
+    background-image:url(spotify/one_2.jpeg);
+}
+.one3{
+    background-image:url(spotify/one_3.jpeg);
+}
+.one4{
+    background-image:url(spotify/one_4.jpeg);
+}
+.one5{
+    background-image:url(spotify/one_5.jpeg);
+}
+.one6{
+    background-image:url(spotify/one_6.jpeg);
+}
+.two1{
+    background-image: url(spotify/two_1.jpeg);
+}
+.two2{
+    background-image: url(spotify/two_2.jpeg);
+}
+.two3{
+    background-image: url(spotify/two_3.jpeg);
+}
+.two4{
+    background-image: url(spotify/two_4.jpeg);
+}
+.two5{
+    background-image: url(spotify/two_5.jpeg);
+}
+.two6{
+    background-image: url(spotify/two_6.jpeg);
+}
+.three1{
+    background-image:url(spotify/three_1.jpeg);
+}
+.three2{
+    background-image:url(spotify/three_2.jpeg);
+}
+.three3{
+    background-image:url(spotify/three_3.jpeg);
+}
+.three4{
+    background-image:url(spotify/three_4.jpeg);
+}
+.three5{
+    background-image:url(spotify/three_5.jpeg);
+}
+.three6{
+    background-image:url(spotify/three_6.jpeg);
+}
+.four1{
+    background-image:url(spotify/four_1.jpg);
+}
+.four2{
+    background-image:url(spotify/four_2.jpg);
+}
+.four3{
+    background-image:url(spotify/four_3.jpg);
+}
+.four4{
+    background-image:url(spotify/four_4.jpeg);
+}
+.four5{
+    background-image:url(spotify/four_5.jpg);
+}
+.four6{
+    background-image:url(spotify/four_6.jpg);
+}
+.five1{
+    background-image:url(spotify/five_1.jpeg);
+}
+.five2{
+    background-image:url(spotify/five_2.jpeg);
+}
+.five3{
+    background-image:url(spotify/five_3.jpeg);
+}
+.five4{
+    background-image:url(spotify/five_4.jpeg);
+}
+.five5{
+    background-image:url(spotify/five_5.jpeg);
+}
+.five6{
+    background-image:url(spotify/five_6.jpeg);
+}
+.six1{
+    background-image:url(spotify/six_1.jpeg);
+}
+.six2{
+    background-image:url(spotify/six_2.jpeg);
+}
+.six3{
+    background-image:url(spotify/six_3.jpeg);
+}
+.six4{
+    background-image:url(spotify/six_4.jpeg);
+}
+.six5{
+    background-image:url(spotify/six_5.jpeg);
+}
+.six6{
+    background-image:url(spotify/six_6.jpeg);
+}
+.seven1{
+    background-image: url(spotify/seven_1.webp);
+}
+.seven2{
+    background-image: url(spotify/seven_2.jpeg);
+}
+.seven3,.seven4{
+    background-image: url(spotify/seven_3_4.jpeg);
+}
+.seven5{
+    background-image: url(spotify/seven_5.jpeg);
+}
+.seven6{
+    background-image: url(spotify/seven_6.jpeg);
+}
+.spotify-green-play-button{
+    height:50px;
+    width:50px;
+    border-radius: 50%;
+    margin:0 12px 12px 0;
+    background-image:url(spotify/play_musicbar.png);
+    background-size: cover;
+    opacity:0;
+    transition: all 0.2s ease ;
+  }
+  .content-of-seven-divs:hover .spotify-green-play-button{
+    opacity:1;
+    cursor:pointer;
+  }
+.artists{
+    border-radius: 50%;
+}
+.text-of-music-div{
+    height:27%;
+    width:inherit;
+}
+.maintext-of-text-of-music-div{
+    height:45%;
+    font-size:15px;
+    font-weight: 550;
+    color:white;
+    display: flex;
+    align-items: center;
+}
+.subtext-of-text-of-music-div{
+    height:55%;
+    color:#ddd;
+    font-size: 14px;
+}
+.footerContentDiv{
+    height:427px;
+    width:100%;    
+    background-color:rgba(29, 27, 27, 0.668);
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+}
+.div-of-footerContent{
+    font-size: 16px;
+    flex-grow:1;
+}
+.footerContentDiv1{
+    height:70%;
+    width:94%;
+    border-bottom:1px solid rgba(221, 221,221,0.15);
+    display:flex;
+    justify-content:space-between;
+    box-sizing: border-box;
+    padding-top: 57px;
+}
+.footerContentDivHeading{
+    color:white;
+    font-weight:700;
+}
+.footerContentDivContent{
+    color:#ddd;
+}
+.footerContentDivContent:hover{
+    color:white;
+    text-decoration:1px solid underline;
+}
+.insta-twitter-facebook-logo{
+    display:flex;
+    flex-grow:1;
+    justify-content: end;
+    box-sizing: border-box;
+    padding-top:20px;
+}
+.socialMediasLogoContainingDiv{
+    height:40px;
+    width:40px;
+    border-radius:50%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#242424;
+    margin:0 8px 0 8px;
+}
+.socialMediasLogoContainingDiv:hover{
+    background-color: rgba(72, 65, 65, 0.717);
+}
+.logo{
+    color:white;
+    font-size:17px;
+}
+.footerContentDiv2{
+    height:30%;
+    width:94%;
+    display: flex;
+    justify-content:start;
+    color:#ddd;
+}
+.musicPlayerDiv{
+    height:66px;
+    width:100%;
+    margin-top:8px;
+    display:flex;
+    background-color:black;
+    border-radius: 8px;
+}
+.musicplayer-part1{
+    width:25%;
+    display:flex;
+    align-items: center;
+    padding:0 0 4px 7px;
+}
+.song-image{
+    height:56px;
+    width:56px;
+    background-image:url(spotify/ninnu_kori.webp);
+    background-size:cover;
+    border-radius: 5px;
+    margin-right:15px;
+    
+}
+.song-name{
+    color:white;
+    font-size:13px;
+    font-weight:650;
+
+}
+.song-singer-name{
+    color:#ddd;
+    font-size:12px;
+    margin-top:3px;
+}
+.green-tick-holder{
+    height:15px;
+    width:15px;
+    background-color:#1db954;
+    font-size:12px;
+    text-align: center;
+    border-radius:50%;
+    margin-left:15px;
+    font-weight:900;
+}
+.musicplayer-part2{
+    width:50%;
+    box-sizing: border-box;
+    padding:0 0 10px 0;
+}
+.music-player-icons-containing-div, .music-player-timer{
+    display:flex;
+    justify-content: center;
+}
+.progress-bar{
+    width:70%;
+    background-color: transparent;
+    appearance: none;
+}
+.progress-bar::-webkit-slider-runnable-track{
+    background-color:#ddd;
+    opacity:1;
+    height:3px;
+    border-radius:20px;
+}
+.progress-bar::-webkit-slider-thumb{
+    appearance: none;
+    height:15px;
+    width:15px;
+    background-color:#1db954;
+    opacity:0;
+    border-radius:50%;
+    cursor:pointer;
+    margin-top:-5px;
+}
+.progress-bar:hover::-webkit-slider-thumb{
+    opacity:1;
+}
+.time-of-progressbar{
+    color:white;
+    font-size: 14px;
+}
+.music-player-icons{
+    color:#ddd;
+    opacity:0.6;
+    font-size:21px;
+    margin:15px 12px 0 12px;
+}
+.music-player-icons:hover{
+    opacity:1;
+}
+.music-player-pause-button1,.music-player-pause-button2{
+    color:white;
+    font-size:32px;
+    margin:9px 12px 0 12px;
+}
+.music-player-pause-button1:hover, .music-player-pause-button2:hover{
+    scale:1.05;
+}
+#pause-and-continue:not(:checked)~.music-player-pause-button1{
+    display: none;
+}
+#pause-and-continue:checked~.music-player-pause-button2{
+    display: none;
+}
+.musicplayer-part3{
+    display:flex;
+    justify-content:space-between;
+    flex-grow:1;
+    box-sizing: border-box;
+    padding:20px 120px 0 60px;
+    color: white;
+}
+#volume:not(:checked)~.mute{
+    display:none;
+}
+#volume:checked + .volume-high{
+    display:none;
+}
+#volume,#pause-and-continue{
+    display: none;
+}
+.music-volume-range{
+    appearance: none;
+    width:125px;
+    height:4px;
+    border-radius: 100px;
+    background-color: #dddb;
+    margin-top: 6px;
+}
+.music-volume-range::-webkit-slider-thumb{
+    appearance: none;
+    height:15px;
+    width: 15px;
+    border-radius: 50%;
+    opacity:0;
+    background-color: #1db954;
+    cursor:pointer;
+}
+.music-volume-range:hover::-webkit-slider-thumb{
+    opacity:1;
+}

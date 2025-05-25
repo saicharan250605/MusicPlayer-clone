@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="stylesheet" href="stylingSpotify.css">
+    <link rel="icon" href="spotify/logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body> 
+    <div class="sideBarDiv">
+        <div class="menu-bar">
+            <div class="menu-content1 content-of-menu-bar"><i class="fa-brands fa-spotify icons"></i>Spotify</div>
+            <div class="menu-content2 content-of-menu-bar"><i class="fa-solid fa-house icons"></i>Home</div>
+            <div class="menu-content3 content-of-menu-bar"><i class="fa-solid fa-magnifying-glass icons"></i>Search</div>
+        </div>
+        <div class="sideBarFooter">
+            <div class="innerSideBarFooter1">
+                <div class="your-library">
+                    <div class="library-icon"></div>
+                    <p class="library-heading">Your Library</p>
+                    <div class="plus-symbol"><i class="fa-solid fa-plus"></i></div>
+                </div>
+                <div class="Your-library-content">
+                    <div class="main-div-of-library-content">
+                        <div class="create-playlist">
+                            <P class="maintext-of-createplaylist">Create your first playlist</P>
+                            <p class="subtext-of-createplaylist">It's easy, we'll help you</p>
+                            <div class="library-content-button">Create Playlist</div>
+                        </div>
+                        <div class="podcasts-to-follow">
+                            <P class="maintext-of-createplaylist">Let's find some podcasts to follow</P>
+                            <p class="subtext-of-createplaylist">We'll keep you updated on new episodes</p>
+                            <div class="library-content-button podcast-button">Browse podcasts</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="innerSideBarFooter2">
+                <p><span class="innerSideBarFooter2Content">Legal</span><span>Safety & Privacy Center</span></p>
+                <P><span class="innerSideBarFooter2Content">Privacy Policy</span><span class="innerSideBarFooter2Content">Cookies</span><span>About Ads</span></P>
+                <p class="innerSideBarFooter2Content">Accessibilities</p>
+                <p class="innerSideBarFooter2Content">Cookies</p>
+                <div class="language">&#127760;English</div>
+            </div>
+        </div>
+    </div>
+    <div class="mainMusicDiv">
+        <div class="mainMusicDivContent">
+            <div class="headerContentDiv">
+                <div class="headerContent">
+                    <div class="arrow"><i class="fa-solid fa-angle-left"></i></div>
+                    <div class="arrow"><i class="fa-solid fa-angle-right"></i></div>
+                    <div class="extra-space-occupier"></div>
+                    <div class="signinButton">Sign up</div>
+                    <div class="loginButton">Log in</div>
+                </div>
+            </div>
+            <div class="musicAndFooterContentDiv">
+                <div class="musicContentDiv">
+                    <div class="popular-artists seven-divs-of-musicContent">
+                        <div class="heading-of-seven-divs">
+                            <div class="main-text-of-heading-of-seven-divs">Popular artists</div>
+                            <div class="show-all-option">Show all</div>
+                        </div>
+                        <div class="contentDiv-of-seven-divs">
+                            <div class="content-of-seven-divs">
+                                <div class="photo-and-text-content-of-musicDiv">
+                                    <div class="photo-of-music-div artists one1"> <div class="spotify-green-play-button"></div></div>
+                                    <div class="text-of-music-div">
+                                        <div class="maintext-of-text-of-music-div">Pritam</div>
+                                        <div class="subtext-of-text-of-music-div">Artist</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content-of-seven-divs">
+                                <div class="photo-and-text-content-of-musicDiv">
+                                    <div class="photo-of-music-div artists one2"> <div class="spotify-green-play-button"></div></div>
+                                    <div class="text-of-music-div">
+                                        <div class="maintext-of-text-of-music-div">Arjit Singh</div>
+                                        <div class="subtext-of-text-of-music-div">Artist</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content-of-seven-divs">
+                                <div class="photo-and-text-content-of-musicDiv">
+                                    <div class="photo-of-music-div artists one3"> <div class="spotify-green-play-button"></div></div>
+                                    <div class="text-of-music-div">
+                                        <div class="maintext-of-text-of-music-div">A.R. Rahman</div>
+                                        <div class="subtext-of-text-of-music-div">Artist</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content-of-seven-divs">
+                                <div class="photo-and-text-content-of-musicDiv">
+                                    <div class="photo-of-music-div artists one4"> <div class="spotify-green-play-button"></div></div>
+                                    <div class="text-of-music-div">
+                                        <div class="maintext-of-text-of-music-div">Vishal Mishra</div>
+                                        <div class="subtext-of-text-of-music-div">Artist</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content-of-seven-divs">
+                                <div class="photo-and-text-content-of-musicDiv">
+                                    <div class="photo-of-music-div artists one5"> <div class="spotify-green-play-button"></div></div>
+                                    <div class="text-of-music-div">
+                                        <div class="maintext-of-text-of-music-div">Anirudh Ravichander</div>
+                                        <div class="subtext-of-text-of-music-div">Artist</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content-of-seven-divs">
+                                <div class="photo-and-text-content-of-musicDiv">
+                                    <div class="photo-of-music-div artists one6"> <div class="spotify-green-play-button"></div></div>
+                                    <div class="text-of-music-div">
+                                        <div class="maintext-of-text-of-music-div">Vishal-Shekhar</div>
+                                        <div class="subtext-of-text-of-music-div">Artist</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="popular-albums seven-divs-of-musicContent">
+                        <div class="heading-of-seven-divs">
+                            <div class="main-text-of-heading-of-seven-divs">Popular albums</div>
+                            <div class="show-all-option">Show all</div>
+                        </div>
+                        <div class="contentDiv-of-seven-divs">
+                            <div class="content-of-seven-divs">
+                                <div class="photo-and-text-content-of-musicDiv">
+                                    <div class="photo-of-music-div two1"><div class="spotify-green-play-button"></div></div>
+                                    <div class="text-of-music-div">
+                                        <div class="maintext-of-text-of-music-div">ANIMAL</div>
+                                        <div class="subtext-of-text-of-music-div">Manan Bhardwaj, Vishal Mishra, Jaani</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content-of-seven-divs">
+                                <div class="photo-and-text-content-of-musicDiv">
+                                    <div class="photo-of-music-div two2"><div class="spotify-green-play-button"></div></div>
+                                    <div class="text-of-music-div">
+                                        <div class="maintext-of-text-of-music-div">Still Rollin</div>
+                                        <div class="subtext-of-text-of-music-div">Shubh</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content-of-seven-divs">
+                                <div class="photo-and-text-content-of-musicDiv">
+                                    <div class="photo-of-music-div two3"><div class="spotify-green-play-button"></div></div>
+                                    <div class="text-of-music-div">
+                                        <div class="maintext-of-text-of-music-div">Moosetape</div>
+                                        <div class="subtext-of-text-of-music-div">Sidhu Moose Wala</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content-of-seven-divs">
+                                <div class="photo-and-text-content-of-musicDiv">
+                                    <div class="photo-of-music-div two4"><div class="spotify-green-play-button"></div></div>
+                                    <div class="text-of-music-div">
+                                        <div class="maintext-of-text-of-music-div">Ghost</div>
+                                        <div class="subtext-of-text-of-music-div">Diljit Dosanjh</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content-of-seven-divs">
+                                <div class="photo-and-text-content-of-musicDiv">
+                                    <div class="photo-of-music-div two6"><div class="spotify-green-play-button"></div></div>
+                                    <div class="text-of-music-div">
+                                        <div class="maintext-of-text-of-music-div">Aashiqui 2</div>
+                                        <div class="subtext-of-text-of-music-div">Mithoon, Ankit Tiwari, Jeet Gannguli</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content-of-seven-divs">
+                                <div class="photo-and-text-content-of-musicDiv">
+                                    <div class="photo-of-music-div two5"><div class="spotify-green-play-button"></div></div>
+                                    <div class="text-of-music-div">
+                                        <div class="maintext-of-text-of-music-div">Ek Tha Raja</div>
+                                        <div class="subtext-of-text-of-music-div">Badshah</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="popular-radio seven-divs-of-musicContent">
+                        <div class="heading-of-seven-divs">
+                            <div class="main-text-of-heading-of-seven-divs">Popular radio</div>
+                            <div class="show-all-option">Show all</div>
+                        </div>
+                        <div class="contentDiv-of-seven-divs">
+                            <div class="content-of-seven-divs">
+                                <div class="photo-and-text-content-of-musicDiv">
+                                    <div class="photo-of-music-div three1"><div class="spotify-green-play-button"></div></div>
+                                    <div class="text-of-music-div">
+                                        <div class="maintext-of-text-of-music-div">Arjit Singh Radio</div>
+                                        <div class="subtext-of-text-of-music-div">With Neha Kakkar, Pritam, KK and more</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content-of-seven-divs">
+                                <div class="photo-and-text-content-of-musicDiv">
+                                    <div class="photo-of-music-div three2"><div class="spotify-green-play-button"></div></div>
+                                    <div class="text-of-music-div">
+                                        <div class="maintext-of-text-of-music-div">Diljith Dosanjh Radio</div>
+                                        <div class="subtext-of-text-of-music-div">With Garry Sandhu, Ranjit Bawa, Amrinder...</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content-of-seven-divs">
+                                <div class="photo-and-text-content-of-musicDiv">
+                                    <div class="photo-of-music-div three3"><div class="spotify-green-play-button"></div></div>
+                                    <div class="text-of-music-div">
+                                        <div class="maintext-of-text-of-music-div">Shreya Ghoshal Radio</div>
+                                        <div class="subtext-of-text-of-music-div">With Sonu Nigam, Sunidhi Chauhan, shaa..</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content-of-seven-divs">
+                                <div class="photo-and-text-content-of-musicDiv">
+                                    <div class="photo-of-music-div three4"><div class="spotify-green-play-button"></div></div>
+                                    <div class="text-of-music-div">
+                                        <div class="maintext-of-text-of-music-div">G.V.Prakash Radio</div>
+                                        <div class="subtext-of-text-of-music-div">With Santhosh Narayanan, Hiphop...</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content-of-seven-divs">
+                                <div class="photo-and-text-content-of-musicDiv">
+                                    <div class="photo-of-music-div three5"><div class="spotify-green-play-button"></div></div>
+                                    <div class="text-of-music-div">
+                                        <div class="maintext-of-text-of-music-div">Kumar Sanu Radio</div>
+                                        <div class="subtext-of-text-of-music-div">With Udit Narayan, Alka Yagnik, Anuradha...</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content-of-seven-divs">
+                                <div class="photo-and-text-content-of-musicDiv">
+                                    <div class="photo-of-music-div three6"><div class="spotify-green-play-button"></div></div>
+                                    <div class="text-of-music-div">
+                                        <div class="maintext-of-text-of-music-div">A.R.Rahman Radio</div>
+                                        <div class="subtext-of-text-of-music-div">With Shankar Mahadevan,Anirudh...</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="featured-charts seven-divs-of-musicContent">
+                        <div class="heading-of-seven-divs">
+                            <div class="main-text-of-heading-of-seven-divs">Featured Charts</div>
+                            <div class="show-all-option"></div>
+                        </div>
+                        <div class="contentDiv-of-seven-divs">
+                            <div class="content-of-seven-divs">
+                                <div class="photo-and-text-content-of-musicDiv">
+                                    <div class="photo-of-music-div four1"><div class="spotify-green-play-button"></div></div>
+                                    <div class="text-of-music-div">
+                                        <div class="maintext-of-text-of-music-div">Top Songs - Global</div>
+                                        <div class="subtext-of-text-of-music-div">Your weekly update of the most played tracks...</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content-of-seven-divs">
+                                <div class="photo-and-text-content-of-musicDiv">
+                                    <div class="photo-of-music-div four2"><div class="spotify-green-play-button"></div></div>
+                                    <div class="text-of-music-div">
+                                        <div class="maintext-of-text-of-music-div">Top Songs - USA</div>
+                                        <div class="subtext-of-text-of-music-div">Your weekly update of the most played tracks...</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content-of-seven-divs">
+                                <div class="photo-and-text-content-of-musicDiv">
+                                    <div class="photo-of-music-div four3"><div class="spotify-green-play-button"></div></div>
+                                    <div class="text-of-music-div">
+                                        <div class="maintext-of-text-of-music-div">Top 50 - Global</div>
+                                        <div class="subtext-of-text-of-music-div">Your daily update of the most played tracks righ...</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content-of-seven-divs">
+                                <div class="photo-and-text-content-of-musicDiv">
+                                    <div class="photo-of-music-div four4"><div class="spotify-green-play-button"></div></div>
+                                    <div class="text-of-music-div">
+                                        <div class="maintext-of-text-of-music-div">Top 50 - USA</div>
+                                        <div class="subtext-of-text-of-music-div">Your daily update of the most played tracks righ...</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content-of-seven-divs">
+                                <div class="photo-and-text-content-of-musicDiv">
+                                    <div class="photo-of-music-div four5"><div class="spotify-green-play-button"></div></div>
+                                    <div class="text-of-music-div">
+                                        <div class="maintext-of-text-of-music-div">Viral 50 - Global</div>
+                                        <div class="subtext-of-text-of-music-div">Your daily update of the most viral tracks right...</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content-of-seven-divs">
+                                <div class="photo-and-text-content-of-musicDiv">
+                                    <div class="photo-of-music-div four6"><div class="spotify-green-play-button"></div></div>
+                                    <div class="text-of-music-div">
+                                        <div class="maintext-of-text-of-music-div">Viral 50 - USA</div>
+                                        <div class="subtext-of-text-of-music-div">Your daily update of the most viral tracks right...</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="spotify-playlist seven-divs-of-musicContent">
+                        <div class="heading-of-seven-divs">
+                            <div class="main-text-of-heading-of-seven-divs">Spotify Playlists</div>
+                            <div class="show-all-option">Show all</div>
+                        </div>
+                        <div class="contentDiv-of-seven-divs">
+                            <div class="content-of-seven-divs">
+                                <div class="photo-and-text-content-of-musicDiv">
+                                    <div class="photo-of-music-div five1"><div class="spotify-green-play-button"></div></div>
+                                    <div class="text-of-music-div">
+                                        <div class="maintext-of-text-of-music-div">Viral Hits</div>
+                                        <div class="subtext-of-text-of-music-div">viral, trending and taking off</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content-of-seven-divs">
+                                <div class="photo-and-text-content-of-musicDiv">
+                                    <div class="photo-of-music-div five2"><div class="spotify-green-play-button"></div></div>
+                                    <div class="text-of-music-div">
+                                        <div class="maintext-of-text-of-music-div">Chillhop</div>
+                                        <div class="subtext-of-text-of-music-div">Blissed out beats and head nodding grooves...</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content-of-seven-divs">
+                                <div class="photo-and-text-content-of-musicDiv">
+                                    <div class="photo-of-music-div five3"><div class="spotify-green-play-button"></div></div>
+                                    <div class="text-of-music-div">
+                                        <div class="maintext-of-text-of-music-div">Soft Pop Hits</div>
+                                        <div class="subtext-of-text-of-music-div">Warm familiar pop you know and love. Cover...</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content-of-seven-divs">
+                                <div class="photo-and-text-content-of-musicDiv">
+                                    <div class="photo-of-music-div five4"><div class="spotify-green-play-button"></div></div>
+                                    <div class="text-of-music-div">
+                                        <div class="maintext-of-text-of-music-div">Phonk</div>
+                                        <div class="subtext-of-text-of-music-div">the beat of your drift</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content-of-seven-divs">
+                                <div class="photo-and-text-content-of-musicDiv">
+                                    <div class="photo-of-music-div five5"><div class="spotify-green-play-button"></div></div>
+                                    <div class="text-of-music-div">
+                                        <div class="maintext-of-text-of-music-div">Jazz in the...</div>
+                                        <div class="subtext-of-text-of-music-div">Soft instrumental Jazz for all your activities.</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content-of-seven-divs">
+                                <div class="photo-and-text-content-of-musicDiv">
+                                    <div class="photo-of-music-div five6"><div class="spotify-green-play-button"></div></div>
+                                    <div class="text-of-music-div">
+                                        <div class="maintext-of-text-of-music-div">Rap Caviar</div>
+                                        <div class="subtext-of-text-of-music-div">New music from Drake, Future and Metro...</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="spotify-original-and-exclusiv-shows seven-divs-of-musicContent">
+                        <div class="heading-of-seven-divs">
+                            <div class="main-text-of-heading-of-seven-divs">Spotify original podcasts</div>
+                            <div class="show-all-option">Show all</div>
+                        </div>
+                        <div class="contentDiv-of-seven-divs">
+                            <div class="content-of-seven-divs">
+                                <div class="photo-and-text-content-of-musicDiv">
+                                    <div class="photo-of-music-div six1"><div class="spotify-green-play-button"></div></div>
+                                    <div class="text-of-music-div">
+                                        <div class="maintext-of-text-of-music-div">The Ranveer Show</div>
+                                        <div class="subtext-of-text-of-music-div">Beer Biceps</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content-of-seven-divs">
+                                <div class="photo-and-text-content-of-musicDiv">
+                                    <div class="photo-of-music-div six2"><div class="spotify-green-play-button"></div></div>
+                                    <div class="text-of-music-div">
+                                        <div class="maintext-of-text-of-music-div">Shri Krishna Leela...</div>
+                                        <div class="subtext-of-text-of-music-div">Spotify studios</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content-of-seven-divs">
+                                <div class="photo-and-text-content-of-musicDiv">
+                                    <div class="photo-of-music-div six3"><div class="spotify-green-play-button"></div></div>
+                                    <div class="text-of-music-div">
+                                        <div class="maintext-of-text-of-music-div">The Joe Rogan...</div>
+                                        <div class="subtext-of-text-of-music-div">Joe Rogan</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content-of-seven-divs">
+                                <div class="photo-and-text-content-of-musicDiv">
+                                    <div class="photo-of-music-div six4"><div class="spotify-green-play-button"></div></div>
+                                    <div class="text-of-music-div">
+                                        <div class="maintext-of-text-of-music-div">Gopi Sudhakar Ennen...</div>
+                                        <div class="subtext-of-text-of-music-div">Spotify Studios</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content-of-seven-divs">
+                                <div class="photo-and-text-content-of-musicDiv">
+                                    <div class="photo-of-music-div six5"><div class="spotify-green-play-button"></div></div>
+                                    <div class="text-of-music-div">
+                                        <div class="maintext-of-text-of-music-div">Pretkotha (Bengali...</div>
+                                        <div class="subtext-of-text-of-music-div">Gourab Tapadar</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content-of-seven-divs">
+                                <div class="photo-and-text-content-of-musicDiv">
+                                    <div class="photo-of-music-div six6"><div class="spotify-green-play-button"></div></div>
+                                    <div class="text-of-music-div">
+                                        <div class="maintext-of-text-of-music-div">True Story Bro! with...</div>
+                                        <div class="subtext-of-text-of-music-div">Spotify</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="trending-episodes seven-divs-of-musicContent">
+                        <div class="heading-of-seven-divs">
+                            <div class="main-text-of-heading-of-seven-divs">Trending Episodes</div>
+                            <div class="show-all-option">Show all</div>
+                        </div>
+                        <div class="contentDiv-of-seven-divs">
+                            <div class="content-of-seven-divs">
+                                <div class="photo-and-text-content-of-musicDiv">
+                                    <div class="photo-of-music-div seven1"><div class="spotify-green-play-button"></div></div>
+                                    <div class="text-of-music-div">
+                                        <div class="maintext-of-text-of-music-div">Welcome back, RJ...</div>
+                                        <div class="subtext-of-text-of-music-div">Jun 2021 . 15 min</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content-of-seven-divs">
+                                <div class="photo-and-text-content-of-musicDiv">
+                                    <div class="photo-of-music-div seven2"><div class="spotify-green-play-button"></div></div>
+                                    <div class="text-of-music-div">
+                                        <div class="maintext-of-text-of-music-div">#73: Hotel of Horro...</div>
+                                        <div class="subtext-of-text-of-music-div">Jun 2021 . 93 min</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content-of-seven-divs">
+                                <div class="photo-and-text-content-of-musicDiv">
+                                    <div class="photo-of-music-div seven3"><div class="spotify-green-play-button"></div></div>
+                                    <div class="text-of-music-div">
+                                        <div class="maintext-of-text-of-music-div">Anubis: God of Dea...</div>
+                                        <div class="subtext-of-text-of-music-div">Jun 2021 . 16 min</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content-of-seven-divs">
+                                <div class="photo-and-text-content-of-musicDiv">
+                                    <div class="photo-of-music-div seven4"><div class="spotify-green-play-button"></div></div>
+                                    <div class="text-of-music-div">
+                                        <div class="maintext-of-text-of-music-div">Anubis: God of Dea...</div>
+                                        <div class="subtext-of-text-of-music-div">Jun 2021 . 13 min</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content-of-seven-divs">
+                                <div class="photo-and-text-content-of-musicDiv">
+                                    <div class="photo-of-music-div seven5"><div class="spotify-green-play-button"></div></div>
+                                    <div class="text-of-music-div">
+                                        <div class="maintext-of-text-of-music-div">Mahabharata Episo...</div>
+                                        <div class="subtext-of-text-of-music-div">Apr 2014 . 24 min</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content-of-seven-divs">
+                                <div class="photo-and-text-content-of-musicDiv">
+                                    <div class="photo-of-music-div  seven6"><div class="spotify-green-play-button"></div></div>
+                                    <div class="text-of-music-div">
+                                        <div class="maintext-of-text-of-music-div">Relaxing Rain Sound</div>
+                                        <div class="subtext-of-text-of-music-div">Aug 2019 . 122 min</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footerContentDiv">
+                    <div class="footerContentDiv1">
+                        <div class="company div-of-footerContent">
+                            <p class="footerContentDivHeading">Company</p>
+                            <p class="footerContentDivContent"> About</p>
+                            <p class="footerContentDivContent">Jobs</p>
+                            <p class="footerContentDivContent">For the Record</p>
+                        </div>
+                        <div class="communities div-of-footerContent">
+                            <p class="footerContentDivHeading">Communities</p>
+                            <p class="footerContentDivContent">For Artists</p>
+                            <p class="footerContentDivContent">Developers</p>
+                            <p class="footerContentDivContent">Advertising</p>
+                            <p class="footerContentDivContent">Investors</p>
+                            <p class="footerContentDivContent">Vendors</p>
+                        </div>
+                        <div class="useful-links div-of-footerContent">
+                            <p class="footerContentDivHeading">Useful links</p>
+                            <p class="footerContentDivContent">Support</p>
+                            <p class="footerContentDivContent">Free Mobile App</p>
+                        </div>
+                        <div class="spotify-plans div-of-footerContent">
+                            <p class="footerContentDivHeading">Spotify Plans</p>
+                            <p class="footerContentDivContent"> Premium Individual</p>
+                            <p class="footerContentDivContent">Premium Duo</p>
+                            <p class="footerContentDivContent">Premium Family</p>
+                            <p class="footerContentDivContent">Premium Student</p>
+                            <p class="footerContentDivContent">Spotify Free</p>
+                        </div>
+                        <div class="insta-twitter-facebook-logo">
+                            <div class="socialMediasLogoContainingDiv"><i class="fa-brands fa-instagram logo"></i></div>
+                            <div class="socialMediasLogoContainingDiv"><i class="fa-brands fa-twitter logo"></i></div>
+                            <div class="socialMediasLogoContainingDiv"><i class="fa-brands fa-facebook logo"></i></div>
+                        </div>
+                    </div>
+                    <div class="footerContentDiv2">
+                        <p>&#169; 2024 Spotify AB</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="musicPlayerDiv">
+        <div class="musicplayer-part1">
+            <div class="song-image"></div>
+            <div class="song-text">
+                <div class="song-name">Adiga Adiga</div>
+                <div class="song-singer-name">Sid Sriram</div>
+            </div>
+            <div class="green-tick-holder"><i class="fa-solid fa-check  "></i></div>
+        </div>
+        <div class="musicplayer-part2">
+            <div class="music-player-icons-containing-div">
+                <i class="fa-solid fa-shuffle music-player-icons"></i>
+                <i class="fa-solid fa-backward-step music-player-icons"></i>
+                <input type="checkbox" id="pause-and-continue">
+                <label for="pause-and-continue" class="music-player-pause-button1"><i class="fa-solid fa-circle-pause"></i></label>
+                <label for="pause-and-continue" class="music-player-pause-button2"><i class="fa-solid fa-circle-play "></i></label>
+                <i class="fa-solid fa-forward-step music-player-icons"></i>
+                <i class="fa-solid fa-repeat music-player-icons"></i>
+            </div>
+            <div class="music-player-timer">
+                <span class="time-of-progressbar">0:00</span>
+                <input type="range" min="0" max="100" class="progress-bar" >
+                <span class="time-of-progressbar">3:33</span>
+            </div>
+        </div>
+        <div class="musicplayer-part3">
+            <input type="checkbox" id="volume">
+            <label for="volume" class="volume-high"><i class="fa-solid fa-volume-high "></i></label>
+            <label for="volume" class="mute"><i class="fa-solid fa-volume-xmark"></i></label>
+            <input type="range" class="music-volume-range" min="0" max="100">
+            <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+        </div>
+    </div>
+</body>
+</html>
